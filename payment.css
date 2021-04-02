@@ -147,7 +147,7 @@ select:invalid,
   border-color: #8ccbf3;
 }
 
-/*Customizable input type=Radio */
+/*Custom input type=Radio */
 
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
