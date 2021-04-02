@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Open+Sans&display=swap");
+
+.paymentSection {
+  width: 570px;
+  height: 670px;
+  margin: 209px 160px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 1px #f3f3f3;
+}
+
+.paymentTitle {
+  background-color: #f3f3f3;
+  padding: 2rem 2rem;
+  border-radius: 8px 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  color: #666666;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+
+.paymentForm {
+  padding: 0.5rem 2rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.optionContainer {
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.inputContainer {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.paymentOption {
+  font-size: 16px;
+  color: #666666;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.payTextInformation {
+  margin-left: 1.4rem;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 17px;
+  width: 70%;
+}
+
+.paymentCheckBox {
+  height: 0.8rem;
+  margin: 0 0.3rem 0 0;
+}
+
+input,
+select {
+  height: 2.1rem;
+  border: 2px solid #cccccc;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 14px;
+  padding-left: 1rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.paymentLogo {
+  float: right;
+  margin-right: 0.3125rem;
+}
+
+.largeInputSize {
+  width: 95%;
+}
+
+.mediumInputSize {
+  border: none;
+  max-width: 80%;
+}
+
+.cvcContainer {
+  width: 46.5%;
+  display: inline-block;
+  border-radius: 4px;
+  border: 2px solid #cccccc;
+}
+
+.cvcLogo {
+  float: right;
+  margin-top: 0.3rem;
+  padding-right: 8px;
+}
+
+.smallInputSize {
+  width: 22%;
+  margin-right: 1rem;
+  height: 2.4rem;
+  margin: 1.5rem 1rem 1.5rem 0;
+}
+
+button {
+  width: 25%;
+  height: 2.5rem;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.backButton {
+  background-color: transparent;
+  border: 2px solid #666666;
+}
+
+.continueButton {
+  background-color: #8ccbf3;
+  border: none;
+  color: #ffffffff;
+  float: right;
+  margin-right: 0.5rem;
+}
+
+select:focus,
+input:focus {
+  outline: #8ccbf3 auto 5px;
+}
+
+select:hover {
+  outline: #8ccbf3 auto 5px;
+}
+
+select:invalid,
+::placeholder {
+  color: #cccccc;
+}
+
+#cc::placeholder {
+  color: #666666;
+}
+
+.cvcContainer input:focus {
+  outline: none;
+}
+
+.cvcContainerBorder {
+  border-color: #8ccbf3;
+}
+
+/*Customizable input type=Radio */
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #8ccbf3;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
