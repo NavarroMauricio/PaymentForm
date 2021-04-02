@@ -102,8 +102,8 @@ select {
 }
 
 button {
-  width: 25%;
-  height: 2.5rem;
+  width: 27%;
+  height: 2.6rem;
   border-radius: 8px;
   font-size: 14px;
 }
@@ -118,7 +118,7 @@ button {
   border: none;
   color: #ffffffff;
   float: right;
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
 }
 
 select:focus,
